@@ -1,0 +1,50 @@
+.form {
+}
+
+.form__input {
+    height: 50px;
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: $white;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in;
+
+    &::placeholder{
+        color: $placeholder;
+    }
+
+    &:focus{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.form__privacy {
+    font-size: 13px;
+    color: $muted;
+    text-align: center;
+    line-height: 1.23;
+}
+
+.form__btn {
+    font-size: 16px;
+    font-weight: 700;
+    height: 50px;
+    background-color: $accent;
+    color: $white;
+    text-align: center;
+    font-family: $font-main;
+    padding: 12px;
+    background-color: $accent;
+
+
+    &:hover{
+        background-color: saturate($accent, 10%);//увеличиваем яркости при наведении на 10%
+    }
+}
+
+.cta__form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 30px;//1это отступ между рядами 2 между колонками
+}

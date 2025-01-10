@@ -1,0 +1,11 @@
+@mixin decorNumber{
+    //тут повторяющиеся св-фа для римскиз цифр
+    position: absolute;
+    top:0;
+    z-index: -1;//делаем ниже карты но над фоном
+
+    line-height: 1.15;	
+    opacity: 0.02;
+    font-size: 400px;
+    font-family: $font-accent;
+}
