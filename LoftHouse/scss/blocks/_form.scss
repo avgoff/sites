@@ -24,6 +24,12 @@
     color: $muted;
     text-align: center;
     line-height: 1.23;
+
+    &--bottom {
+        @include mediaTablet {
+            grid-row: 4 / 5;
+        }
+    }
 }
 
 .form__btn {
@@ -43,8 +49,3 @@
     }
 }
 
-.cta__form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px 30px;//1это отступ между рядами 2 между колонками
-}
