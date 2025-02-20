@@ -34,4 +34,12 @@
         font-size: 18px;
         margin: 35px 0 20px 0;
     }
+    &__icon{
+        &_animated{
+            animation-name: heartbeat;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+    }
 }
